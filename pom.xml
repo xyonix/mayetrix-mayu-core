@@ -104,6 +104,13 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<extensions>
+			<extension>
+	        <groupId>org.springframework.build</groupId>
+	        <artifactId>aws-maven</artifactId>
+	        <version>5.0.0.RELEASE</version>
+	    </extension>
+    </extensions>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -130,4 +137,14 @@
             </plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+    <snapshotRepository>
+        <id>xyonix-snapshot</id>
+        <url>s3://com.xyonix.repo/snapshot</url>
+    </snapshotRepository>
+    <repository>
+        <id>xyonix-release</id>
+        <url>s3://com.xyonix.repo/release</url>
+    </repository>
+</distributionManagement>
 </project>
