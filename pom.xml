@@ -4,7 +4,7 @@
 	<groupId>com.xyonix.mayetrix.mayu</groupId>
 	<artifactId>mayetrix-mayu-core</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>mayetrix-mayu-core</name>
 	<url>http://maven.apache.org</url>
 	<licenses>
